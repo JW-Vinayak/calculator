@@ -2,11 +2,11 @@
 
 
 
-<div id="container" ng-controller="TempCalculatorCtrl as cctrl">
+<div id="container" ng-controller="CalculatorCtrl as cctrl">
 <div id="display">
-  <input type='text' ng-model="flow" id="flow" />
+  <input class="input flow" type='text' ng-model="flow" id="" />
   <div  id="clear"></div>
-  <input type='text' ng-model="result" id="result" />
+  <input class="input result" type='text' ng-model="result" id="" />
 </div>
 <button ng-click="cctrl.perform(btn)" ng-repeat="btn in cctrl.buttons" >{{ btn }}</button>
 <div id="clear"></div>

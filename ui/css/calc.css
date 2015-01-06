@@ -17,9 +17,23 @@ input, button {
   display:inline-block;
 }
 
-input[type=text] {
-  widht:50px;
+input[type=text].input {
+  width:210px;
+  text-align:right;
+  background-color: transparent;
+  border: 0px;
+  height:20px;
 }
+
+input[type=text].input.result {
+  font-size:1.6em;
+  height:28px;
+}
+
+input[type=text].input.flow {
+  font-size:0.9em;
+}
+
 
 button {
   color:white;
@@ -43,7 +57,7 @@ button {
 }
 #display #flow, #display #result {
   display:inline-block;
-  
+
   float:right;
   margin-right:5px;
 }
