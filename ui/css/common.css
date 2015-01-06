@@ -1,0 +1,12 @@
+body {
+  font-family:Arial;
+  font-size : 16px;
+  background-color: rgb(0,0,0);
+  color:white;
+}
+
+h1 {
+  margin:5% auto;
+  text-align:center;
+  font-family:calibri;
+}

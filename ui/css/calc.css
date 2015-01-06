@@ -1,0 +1,63 @@
+#container {
+  width: 240px;
+  margin:auto;
+}
+#container button {
+  float:left;
+  margin:5px;
+}
+
+input, button {
+  width: 50px;
+  height: 35px;
+  font-size:1.1em;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  border-radius:3px;
+  display:inline-block;
+}
+
+input[type=text] {
+  widht:50px;
+}
+
+button {
+  color:white;
+  background-color:blue;
+  cursor:pointer;
+}
+
+#display {
+  width:90%;
+  height : 55px;
+  border:solid 1px white;
+  margin: 5px auto;
+  padding:5px;
+  color: black;
+  background-color:lightgray;
+  border-radius:3px;
+}
+#display #result {
+  font-size:1.8em;
+
+}
+#display #flow, #display #result {
+  display:inline-block;
+  
+  float:right;
+  margin-right:5px;
+}
+
+#clear {
+  clear:both;
+}
+
+button.reset {
+  display:block;
+  width:95%;
+  margin: 5px auto;
+  padding:1px;
+  height:20px;
+  font-size:0.6em;
+  text-align:center;
+}

@@ -1,0 +1,14 @@
+<link rel="stylesheet" type="text/css" href="css/calc.css" />
+
+
+
+<div id="container" ng-controller="TempCalculatorCtrl as cctrl">
+<div id="display">
+  <input type='text' ng-model="flow" id="flow" />
+  <div  id="clear"></div>
+  <input type='text' ng-model="result" id="result" />
+</div>
+<button ng-click="cctrl.perform(btn)" ng-repeat="btn in cctrl.buttons" >{{ btn }}</button>
+<div id="clear"></div>
+<button class="reset" ng-click="cctrl.reset()" >RESET</button>
+</div>

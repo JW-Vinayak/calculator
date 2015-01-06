@@ -1,0 +1,8 @@
+{
+  "name": "calc",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "q": "~1.1.2"
+  }
+}
