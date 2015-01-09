@@ -22,7 +22,7 @@ app.on('window-all-closed', function() {
 
     // and load the index.html of the app.
     //console.log("path join is " + 'file://' +  path.join(__dirname,'ui','view','index.html'));
-    mainWindow.loadUrl(path.join(__dirname,'ui','index.html'));
+    mainWindow.loadUrl(path.join(__dirname,'index.html'));
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function() {

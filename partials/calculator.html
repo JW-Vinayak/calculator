@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="css/calc.css" />
+
+<div id="container" ng-controller="CalculatorCtrl">
+<div id="display">
+  <input class="input flow" type='text' ng-model="flow" id="eleFlow" />
+  <div  id="clear"></div>
+  <input class="input result" type='text' ng-model="result" id="eleResult" />
+</div>
+<button ng-click="perform(btn)" ng-repeat="btn in buttons" ng-attr-id="{{ 'btn' + btn }}" >{{ btn }}</button>
+<div id="clear"></div>
+<button class="reset" ng-click="reset()" >RESET</button>
+</div>
