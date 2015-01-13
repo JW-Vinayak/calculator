@@ -6,6 +6,7 @@ module.exports = function(config){
     files : [
     'js/angular.js',
     'js/angular-mock.js',
+    'js/angular-route.js',
     'js/*.js',
     'spec/unit/*.js'
     ],
