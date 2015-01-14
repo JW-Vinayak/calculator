@@ -42,7 +42,7 @@ app.on('ready', function() {
     label: '&About',
     accelerator: 'Ctrl+W',
     click: function() {
-       mainWindow.webContents.send('changeUrl', '#/about');
+      mainWindow.webContents.send('changeUrl', '#/about');
     }
   },
   ]
@@ -58,9 +58,21 @@ app.on('ready', function() {
     }
   },
   {
-    label: '&Enter Fullscreen',
+    label: '&Pick Folder',
+    accelerator: 'Ctrl+P',
     click: function() {
-      mainWindow.setFullScreen(true);
+      var dialog = require('dialog');
+      var result = dialog.showOpenDialog({ properties: ['openDirectory', 'multiSelections' ]});
+      mainWindow.webContents.send('pick_folder', result);
+    }
+  },
+  {
+    label: '&Fullscreen',
+    click: function() {
+      if(mainWindow.isFullScreen())
+        mainWindow.setFullScreen(false);
+      else
+        mainWindow.setFullScreen(true);
     }
   }
   ]

@@ -66,3 +66,13 @@ calculatorService.service("CalcService", function(){
       }
   };
 });
+
+calculatorService.service('IPC', function( $location){
+  try{
+    this.ipc = require('ipc');
+  }
+  catch(e) {
+    // do nothing. This try-catch block is added so that unit tests run using Jasmine do not break when require method is not found,
+    // as this method is part of atom shell app environment and not angular app'
+  }
+});
