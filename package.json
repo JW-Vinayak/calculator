@@ -1,6 +1,6 @@
 {
-  "name": "calc",
-  "productName": "Basic Calculator",
+  "name": "calculator",
+  "productName": "calculator",
   "version": "0.1.0",
   "main": "main.js",
   "dependencies": {

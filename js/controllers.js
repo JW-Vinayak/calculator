@@ -18,20 +18,32 @@ calculatorController.controller('CalculatorCtrl', function($scope,CalcService, I
     $scope.flow =CalcService.getFlow();
     $scope.result = CalcService.getResult();
   };
-  IPC.ipc.on('reset', function(arg) {
-    $scope.$apply(function(){
-      $scope.reset();
-    })
-  });
+  try {
+    IPC.ipc.on('reset', function(arg) {
+      $scope.$apply(function(){
+        $scope.reset();
+      })
+    });
+  }
+  catch(e){
+
+  }
+  
 });
 
 calculatorController.controller('MenuClickHandler', function($scope, IPC){
-  IPC.ipc.on('changeUrl', function(url) {
+  try {
+    IPC.ipc.on('changeUrl', function(url) {
     $scope.goToView(url);
-  });
-  IPC.ipc.on('pick_folder', function(arg) {
-    alert("you picked : " + arg.toString());
-  });
+    });
+    IPC.ipc.on('pick_folder', function(arg) {
+      alert("you picked : " + arg.toString());
+    });
+  }
+  catch(e) {
+    
+  }
+  
   $scope.goToView = function(url){
     window.location = url;
   };
