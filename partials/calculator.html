@@ -1,5 +1,8 @@
+</head>
 <link rel="stylesheet" type="text/css" href="css/calc.css" />
-
+<title translate >Calculator</title>
+</head>
+<body>
 <div id="container" >
 <div id="display">
   <input class="input flow" type='text' ng-model="flow" id="eleFlow" />
@@ -8,5 +11,6 @@
 </div>
 <button ng-click="perform(btn)" ng-repeat="btn in buttons" ng-attr-id="{{ 'btn' + btn }}" >{{ btn }}</button>
 <div id="clear"></div>
-<button class="reset" ng-click="reset()" id="reset" >RESET</button>
+<button class="reset" ng-click="reset()" id="reset" translate >RESET</button>
 </div>
+</body>
